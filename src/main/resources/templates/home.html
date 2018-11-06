@@ -23,12 +23,13 @@
                     <div class="card-body">
                         <form th:action="@{/user/addUser}" method="POST">
                         	<div class="row form-group">
-                        		<label class="col-sm-4"> User Name</label>
+                        		<label class="col-sm-4"> Username:</label>
                         		<input class="col-sm-8 form-control input-sm" type="text" name="username"/>
                         	</div>
                         	<div class="row form-group">
-                        		<label class="col-sm-4"> Password: </label>
-                        		<input class="col-sm-8 form-control input-sm" type="password" name="password" required pattern="(?=.*\d)(?=.*[a-zA-Z]).{8,}" title="Password must be 8 characters including 1 letter and 1 numeric characters"/>
+                        		<label class="col-sm-4"> Password:</label>
+                        		<input class="col-sm-8 form-control input-sm" type="password" name="password"/>
+                  
                         	</div>
                         	<div class="row form-group">
                         		<label class="col-sm-4"> Role: </label>
@@ -52,7 +53,7 @@
                         Tambah Dealer
                     </div>
                     <div class="card-body">
-                        <p class="card-text">Fitur untuk menambah dealer.</p>
+                        <p class="card-text">Fitur untuk menambah dealer: </p>
                         <a class="btn btn-primary" th:href="@{/dealer/add}">Tambah</a>
                     </div>
                 </div>
